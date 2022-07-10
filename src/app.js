@@ -15,13 +15,13 @@ const __dirname = path.dirname(__filename);
 app.engine(
   "hbs",
   expressHbs({
-    layoutsDir: "./views/layouts",
+    layoutsDir: "./src/views/layouts",
     defaultLayout: "main-layout",
     extname: "hbs",
   })
 );
 app.set("view engine", "hbs");
-app.set("views", "views");
+app.set("views", "./src/views");
 
 // Middleware's.
 app.use(express.urlencoded({ extended: false }));

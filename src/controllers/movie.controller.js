@@ -3,7 +3,7 @@ import genres from "../data/genres.data.js";
 
 export const getIndex = (req, res) => {
   MovieModel.getAll((movies) => {
-    res.render("movie/index", {
+    res.render("../views/movie/index", {
       pageTitle: "Home",
       movies: movies,
       genres: genres,
@@ -17,7 +17,7 @@ export const getByGenre = (req, res) => {
   const genre = req.params.genre;
 
   MovieModel.getByGenre(genre, (movies) => {
-    res.render("movie/index", {
+    res.render("../views/movie/index", {
       pageTitle: "Home",
       movies: movies,
       genres: genres,

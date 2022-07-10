@@ -1,0 +1,26 @@
+{
+  "name": "movie-manager-web",
+  "version": "1.0.0",
+  "description": "Manage a list of movies.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anibalventura/movie-manager-web.git"
+  },
+  "author": "Anibal Ventura",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anibalventura/movie-manager-web/issues"
+  },
+  "homepage": "https://github.com/anibalventura/movie-manager-web#readme"
+}

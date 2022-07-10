@@ -1,0 +1,63 @@
+<div class="row justify-content-center">
+  <div class="col-11">
+    <div class="card shadow-sm">
+      <div class="card-header bg-primary bg-opacity-75">
+        <h3 class="text-white">
+          Manage Movies
+          <a href="/admin/add-movie" class="btn btn-success shadow-sm">Add</a>
+        </h3>
+      </div>
+      {{#if hasMovies}}
+        <div class="card-body">
+          <div class="row">
+
+            {{#each movies}}
+              <div class="col-3 mb-3">
+                <div class="card shadow-sm h-100">
+                  <img
+                    src="{{this.imageUrl}}"
+                    class="img-thumbnail card-img-top h-100 w-100"
+                  />
+                  <div class="card-body">
+                    <h4>{{this.title}}</h4>
+                    <div class="mb-3">
+                      <div>
+                        <label
+                          class="card-subtitle text-muted"
+                        >Description:</label>
+                        {{this.description}}
+                      </div>
+                      <div>
+                        <label class="card-subtitle text-muted">Genre:</label>
+                        <span class="badge text-bg-info">{{this.genre}}</span>
+                      </div>
+                      <div>
+                        <label class="card-subtitle text-muted">Status:</label>
+                        <span class="badge {{#if this.status}}text-bg-success{{else}}text-bg-secondary{{/if}}">{{#if
+                            this.status
+                          }}Active{{else}}Inactive{{/if}}</span>
+                      </div>
+                    </div>
+
+                    <div class="btn-group shadow-sm">
+                      <a
+                        href="/admin/edit-movie/{{this.id}}?edit=true"
+                        class="btn btn-sm btn-outline-warning"
+                      >Edit</a>
+                      <a href="/admin/delete-movie/{{this.id}}" class="btn btn-sm btn-outline-danger">Delete</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {{/each}}
+          </div>
+        </div>
+      {{else}}
+        <div class="container-fluid text-center m-5">
+          <h4>No movies created...</h4>
+          <h5>Start creating one!</h5>
+        </div>
+      {{/if}}
+    </div>
+  </div>
+</div>

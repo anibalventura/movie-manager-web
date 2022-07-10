@@ -1,12 +1,5 @@
 import MovieModel from "../models/movie.model.js";
-
-const genres = [
-  { label: "Action", value: "action" },
-  { label: "Horror", value: "horror" },
-  { label: "Comedy", value: "comedy" },
-  { label: "Suspense", value: "suspense" },
-  { label: "Documentaries", value: "documentaries" },
-];
+import genres from "../data/genres.data.js";
 
 export const getIndex = (req, res) => {
   MovieModel.getAll((movies) => {

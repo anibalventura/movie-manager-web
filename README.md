@@ -1,4 +1,4 @@
-# Movies Manager
+# Movie Manager
 
 [![npm](https://img.shields.io/static/v1?label=npm&message=8.5.5&color=purple)](https://www.npmjs.com/)
 [![NodeJS](https://img.shields.io/static/v1?label=NodeJS&message=16.15.0&color=green)](https://nodejs.org/en/)
@@ -13,7 +13,7 @@
 </p>
 
 
-Simple movies manager with CRUD operations and MVC architecture.
+Simple movie manager with CRUD operations and MVC architecture.
 
 ## Features
 

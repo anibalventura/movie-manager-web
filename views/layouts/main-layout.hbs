@@ -3,20 +3,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Periodic Table</title>
+    <title>Movie Manager</title>
     <link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body class="d-flex flex-column min-vh-100">
     <header>
-      <nav class="navbar sticky-top navbar-dark bg-dark box-shadow mb-3">
-        <div class="container-fluid">
-          <a class="navbar-brand mx-4">Home</a>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand ms-4" href="/">Movies Manager</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link {{#if homeActive}}active{{/if}}" aria-current="page" href="/">Home</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
 
-    <main class="container mt-4">
+    <main class="container-fluid mt-4">
       {{{body}}}
     </main>
 

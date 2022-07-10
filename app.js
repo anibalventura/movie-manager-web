@@ -3,6 +3,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import expressHbs from "express-handlebars";
 import errorRoutes from "./routes/error.routes.js";
+import movieRoutes from "./routes/movie.routes.js";
 
 const PORT = process.env.PORT || 5001;
 const app = express();
@@ -26,6 +27,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
 
 // Routes.
+app.use(movieRoutes);
 app.use(errorRoutes);
 
 // Start the server.

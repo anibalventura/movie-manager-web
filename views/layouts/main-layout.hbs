@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Periodic Table</title>
+    <link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <header>
+      <nav class="navbar sticky-top navbar-dark bg-dark box-shadow mb-3">
+        <div class="container-fluid">
+          <a class="navbar-brand mx-4">Home</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mt-4">
+      {{{body}}}
+    </main>
+
+    <footer class="border-top bg-white pt-3 footer text-muted mt-auto">
+      <div class="container-fluid text-center">
+        <p>
+          &copy;
+          <span id="current-year"></span>
+          -
+          <a
+            class="text-decoration-none"
+            href="https://www.anibalventura.com/"
+          >Anibal Ventura</a>
+        </p>
+      </div>
+    </footer>
+    <script src="/assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/scripts.js"></script>
+  </body>
+</html>

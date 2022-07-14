@@ -3,6 +3,6 @@ import { get404 } from "../controllers/error.controller.js";
 
 const errorRoutes = express.Router();
 
-errorRoutes.get("/", get404);
+errorRoutes.use(get404);
 
 export default errorRoutes;
